@@ -633,12 +633,12 @@ section {
   padding-bottom: 3rem;
   opacity: 0;
   transform: translateX(-20px);
+  transition: all 0.6s var(--ease-out-expo);
 }
 
 .timeline-item.visible {
   opacity: 1;
   transform: translateX(0);
-  transition: all 0.6s var(--ease-out-expo);
 }
 
 .timeline-item::before {
@@ -908,81 +908,90 @@ footer span {
       </div>
     </div>
   </div>
-</section><!-- Experience --><!-- Experience -->
-<section id="experience">
+</section>
+
+<!-- Skills -->
+<section id="skills">
   <div class="section-header reveal">
-    <span class="section-number">04</span>
-    <h2 class="section-title">Experience</h2>
+    <span class="section-number">02</span>
+    <h2 class="section-title">Skills</h2>
     <div class="section-line"></div>
   </div>
 
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-date">2025.08 — 2026.06</div>
-      <div class="timeline-title">M.Eng 系统工程</div>
-      <div class="timeline-company">Cornell University</div>
-      <div class="timeline-desc">
-        <ul>
-          <li>主修大模型原理、强化学习、运筹优化、项目管理</li>
-          <li>AI Systems Hackathon — 独立开发 NYC 热浪预警系统</li>
-          <li>孵化「投了吗」项目，获 200 GitHub Star</li>
-        </ul>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <span class="skill-icon">&#9881;</span>
+      <div class="skill-name">产品设计</div>
+      <div class="skill-desc">需求洞察与竞品调研、PRD 撰写、原型设计、用户满意度验证、从 0 到 1 产品交付</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">Axure</span>
+        <span class="skill-tag">墨刀</span>
+        <span class="skill-tag">Xmind</span>
+        <span class="skill-tag">A/B Test</span>
       </div>
     </div>
-
-    <div class="timeline-item">
-      <div class="timeline-date">2025.06 — 2025.09</div>
-      <div class="timeline-title">项目管理与运营实习生</div>
-      <div class="timeline-company">清华大学能源互联网研究院</div>
-      <div class="timeline-desc">
-        <ul>
-          <li>对接国家电网项目负责人，将业务需求转化为结构化功能模块</li>
-          <li>组织跨团队需求评审，推动 3 个关键交付节点按期通过验收</li>
-          <li>提出物理-数据混合驱动方案，鲁棒性提升约 30%，申请发明专利</li>
-        </ul>
+    <div class="skill-card reveal">
+      <span class="skill-icon">&#129302;</span>
+      <div class="skill-name">AI 应用</div>
+      <div class="skill-desc">RAG 检索增强生成、多模型协作管道、AI Agent 开发、大模型原理与应用</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Claude Code</span>
+        <span class="skill-tag">RAG</span>
+        <span class="skill-tag">NotebookLLM</span>
+        <span class="skill-tag">Prompt Engineering</span>
       </div>
     </div>
-
-    <div class="timeline-item">
-      <div class="timeline-date">2023.05 — 2023.09</div>
-      <div class="timeline-title">数据分析实习生</div>
-      <div class="timeline-company">深圳数字经济研究院</div>
-      <div class="timeline-desc">
-        <ul>
-          <li>开发分布式爬虫采集 200+ 上市公司年报，数据完整率 88.2%</li>
-          <li>BERT 模型信息抽取 + 质控流程，分类准确率达 92%</li>
-          <li>构建碳数据库，输出《2023 中国 100 家海外上市公司碳排名分析报告》</li>
-        </ul>
+    <div class="skill-card reveal">
+      <span class="skill-icon">&#128202;</span>
+      <div class="skill-name">数据分析</div>
+      <div class="skill-desc">分布式爬虫、数据清洗与标准化、BERT 语义抽取、数据全链路闭环</div>
+      <div class="skill-tags">
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">SPSS</span>
+        <span class="skill-tag">Excel</span>
+        <span class="skill-tag">Pandas</span>
       </div>
     </div>
-
-    <div class="timeline-item">
-      <div class="timeline-date">2022.06 — 2024.06</div>
-      <div class="timeline-title">联合创始人（活动部）</div>
-      <div class="timeline-company">新能源学会 · 香港中文大学（深圳）</div>
-      <div class="timeline-desc">
-        <ul>
-          <li>策划特斯拉、华为数字能源等企业合作活动，500+ 人次参与</li>
-          <li>公众号从 0 到 3000+ 粉丝，50+ 原创推文，总曝光 1.2 万+</li>
-          <li>单篇最高转化 200 关注用户，季度粉丝增长率 30%</li>
-        </ul>
+    <div class="skill-card reveal">
+      <span class="skill-icon">&#128187;</span>
+      <div class="skill-name">全栈开发</div>
+      <div class="skill-desc">前后端分离架构、API 集成、Chrome 插件开发、AI 应用完整开发链路</div>
+      <div class="skill-tags">
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">FastAPI</span>
+        <span class="skill-tag">Supabase</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">Git</span>
       </div>
     </div>
-
-    <div class="timeline-item">
-      <div class="timeline-date">2021.09 — 2025.06</div>
-      <div class="timeline-title">新能源科学与工程 本科</div>
-      <div class="timeline-company">香港中文大学（深圳）· GPA 3.52/4 专业 top 10%</div>
-      <div class="timeline-desc">
-        <ul>
-          <li>院长嘉许奖、祥波书院最具领导力奖、本科生科研奖学金</li>
-          <li>2 段科研助理经历，发表 2 篇 EI 论文，1 项发明专利（第一发明人）</li>
-          <li>首届"神仙湖"创新创业大赛决赛优秀奖，能源经济学术创意大赛广东省一等奖</li>
-        </ul>
+    <div class="skill-card reveal">
+      <span class="skill-icon">&#9889;</span>
+      <div class="skill-name">运营增长</div>
+      <div class="skill-desc">公众号从 0 到 3000+ 粉丝、50+ 原创推文、企业合作活动策划、社群矩阵搭建</div>
+      <div class="skill-tags">
+        <span class="skill-tag">内容运营</span>
+        <span class="skill-tag">社群运营</span>
+        <span class="skill-tag">活动策划</span>
+        <span class="skill-tag">用户增长</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <span class="skill-icon">&#127919;</span>
+      <div class="skill-name">项目管理</div>
+      <div class="skill-desc">跨团队需求对接、阶段汇报与验收、敏捷开发、优化建模与 Gurobi 仿真</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Notion</span>
+        <span class="skill-tag">跨部门协作</span>
+        <span class="skill-tag">Gurobi</span>
+        <span class="skill-tag">PyTorch</span>
       </div>
     </div>
   </div>
-</section><!-- Projects -->
+</section>
+
+<!-- Projects -->
 <section id="projects">
   <div class="section-header reveal">
     <span class="section-number">03</span>
@@ -1163,86 +1172,85 @@ footer span {
       </div>
     </div>
   </div>
-</section><!-- Skills -->
-<section id="skills">
+</section>
+
+<!-- Experience -->
+<section id="experience">
   <div class="section-header reveal">
-    <span class="section-number">02</span>
-    <h2 class="section-title">Skills</h2>
+    <span class="section-number">04</span>
+    <h2 class="section-title">Experience</h2>
     <div class="section-line"></div>
   </div>
 
-  <div class="skills-grid">
-    <div class="skill-card reveal">
-      <span class="skill-icon">&#9881;</span>
-      <div class="skill-name">产品设计</div>
-      <div class="skill-desc">需求洞察与竞品调研、PRD 撰写、原型设计、用户满意度验证、从 0 到 1 产品交付</div>
-      <div class="skill-tags">
-        <span class="skill-tag">Figma</span>
-        <span class="skill-tag">Axure</span>
-        <span class="skill-tag">墨刀</span>
-        <span class="skill-tag">Xmind</span>
-        <span class="skill-tag">A/B Test</span>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-date">2025.08 — 2026.06</div>
+      <div class="timeline-title">M.Eng 系统工程</div>
+      <div class="timeline-company">Cornell University</div>
+      <div class="timeline-desc">
+        <ul>
+          <li>主修大模型原理、强化学习、运筹优化、项目管理</li>
+          <li>AI Systems Hackathon — 独立开发 NYC 热浪预警系统</li>
+          <li>孵化「投了吗」项目，获 200 GitHub Star</li>
+        </ul>
       </div>
     </div>
-    <div class="skill-card reveal">
-      <span class="skill-icon">&#129302;</span>
-      <div class="skill-name">AI 应用</div>
-      <div class="skill-desc">RAG 检索增强生成、多模型协作管道、AI Agent 开发、大模型原理与应用</div>
-      <div class="skill-tags">
-        <span class="skill-tag">Claude Code</span>
-        <span class="skill-tag">RAG</span>
-        <span class="skill-tag">NotebookLLM</span>
-        <span class="skill-tag">Prompt Engineering</span>
+
+    <div class="timeline-item">
+      <div class="timeline-date">2025.06 — 2025.09</div>
+      <div class="timeline-title">项目管理与运营实习生</div>
+      <div class="timeline-company">清华大学能源互联网研究院</div>
+      <div class="timeline-desc">
+        <ul>
+          <li>对接国家电网项目负责人，将业务需求转化为结构化功能模块</li>
+          <li>组织跨团队需求评审，推动 3 个关键交付节点按期通过验收</li>
+          <li>提出物理-数据混合驱动方案，鲁棒性提升约 30%，申请发明专利</li>
+        </ul>
       </div>
     </div>
-    <div class="skill-card reveal">
-      <span class="skill-icon">&#128202;</span>
-      <div class="skill-name">数据分析</div>
-      <div class="skill-desc">分布式爬虫、数据清洗与标准化、BERT 语义抽取、数据全链路闭环</div>
-      <div class="skill-tags">
-        <span class="skill-tag">SQL</span>
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">SPSS</span>
-        <span class="skill-tag">Excel</span>
-        <span class="skill-tag">Pandas</span>
+
+    <div class="timeline-item">
+      <div class="timeline-date">2023.05 — 2023.09</div>
+      <div class="timeline-title">数据分析实习生</div>
+      <div class="timeline-company">深圳数字经济研究院</div>
+      <div class="timeline-desc">
+        <ul>
+          <li>开发分布式爬虫采集 200+ 上市公司年报，数据完整率 88.2%</li>
+          <li>BERT 模型信息抽取 + 质控流程，分类准确率达 92%</li>
+          <li>构建碳数据库，输出《2023 中国 100 家海外上市公司碳排名分析报告》</li>
+        </ul>
       </div>
     </div>
-    <div class="skill-card reveal">
-      <span class="skill-icon">&#128187;</span>
-      <div class="skill-name">全栈开发</div>
-      <div class="skill-desc">前后端分离架构、API 集成、Chrome 插件开发、AI 应用完整开发链路</div>
-      <div class="skill-tags">
-        <span class="skill-tag">React</span>
-        <span class="skill-tag">FastAPI</span>
-        <span class="skill-tag">Supabase</span>
-        <span class="skill-tag">TypeScript</span>
-        <span class="skill-tag">Git</span>
+
+    <div class="timeline-item">
+      <div class="timeline-date">2022.06 — 2024.06</div>
+      <div class="timeline-title">联合创始人（活动部）</div>
+      <div class="timeline-company">新能源学会 · 香港中文大学（深圳）</div>
+      <div class="timeline-desc">
+        <ul>
+          <li>策划特斯拉、华为数字能源等企业合作活动，500+ 人次参与</li>
+          <li>公众号从 0 到 3000+ 粉丝，50+ 原创推文，总曝光 1.2 万+</li>
+          <li>单篇最高转化 200 关注用户，季度粉丝增长率 30%</li>
+        </ul>
       </div>
     </div>
-    <div class="skill-card reveal">
-      <span class="skill-icon">&#9889;</span>
-      <div class="skill-name">运营增长</div>
-      <div class="skill-desc">公众号从 0 到 3000+ 粉丝、50+ 原创推文、企业合作活动策划、社群矩阵搭建</div>
-      <div class="skill-tags">
-        <span class="skill-tag">内容运营</span>
-        <span class="skill-tag">社群运营</span>
-        <span class="skill-tag">活动策划</span>
-        <span class="skill-tag">用户增长</span>
-      </div>
-    </div>
-    <div class="skill-card reveal">
-      <span class="skill-icon">&#127919;</span>
-      <div class="skill-name">项目管理</div>
-      <div class="skill-desc">跨团队需求对接、阶段汇报与验收、敏捷开发、优化建模与 Gurobi 仿真</div>
-      <div class="skill-tags">
-        <span class="skill-tag">Notion</span>
-        <span class="skill-tag">跨部门协作</span>
-        <span class="skill-tag">Gurobi</span>
-        <span class="skill-tag">PyTorch</span>
+
+    <div class="timeline-item">
+      <div class="timeline-date">2021.09 — 2025.06</div>
+      <div class="timeline-title">新能源科学与工程 本科</div>
+      <div class="timeline-company">香港中文大学（深圳）· GPA 3.52/4 专业 top 10%</div>
+      <div class="timeline-desc">
+        <ul>
+          <li>院长嘉许奖、祥波书院最具领导力奖、本科生科研奖学金</li>
+          <li>2 段科研助理经历，发表 2 篇 EI 论文，1 项发明专利（第一发明人）</li>
+          <li>首届"神仙湖"创新创业大赛决赛优秀奖，能源经济学术创意大赛广东省一等奖</li>
+        </ul>
       </div>
     </div>
   </div>
-</section><!-- Contact -->
+</section>
+
+<!-- Contact -->
 <section id="contact" class="contact-section">
   <h2 class="contact-title reveal">Let's Build<br><em>Something Great</em></h2>
   <p class="contact-subtitle reveal">
@@ -1253,17 +1261,9 @@ footer span {
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,7 12,13 2,7"/></svg>
       Email
     </a>
-    <a href="#" class="contact-link">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-      LinkedIn
-    </a>
     <a href="https://github.com/ipandas111" class="contact-link">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
       GitHub
-    </a>
-    <a href="#" class="contact-link">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-      WeChat
     </a>
     <a href="resume.pdf" class="contact-link">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
@@ -1271,3 +1271,37 @@ footer span {
     </a>
   </div>
 </section>
+
+<!-- Footer -->
+<footer>
+  <span>© 2026 刘子安</span>
+  <span>Built with care</span>
+</footer>
+
+<script>
+// Cursor glow
+const glow = document.getElementById('cursorGlow');
+document.addEventListener('mousemove', e => {
+  glow.style.left = e.clientX + 'px';
+  glow.style.top = e.clientY + 'px';
+});
+
+// Nav scroll class
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// Scroll reveal (IntersectionObserver)
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal, .timeline-item').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
