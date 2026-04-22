@@ -892,6 +892,8 @@ footer span {
 /* ---- Hero AI Canvas ---- */
 .hero {
   position: relative;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .hero-canvas-wrap {
@@ -1447,6 +1449,7 @@ document.querySelectorAll('.reveal, .timeline-item').forEach(el => observer.obse
 // ── Hero AI Neural Canvas ─────────────────────────────────────────────
 (function() {
   const canvas = document.getElementById('heroCanvas');
+  if (!canvas) return;
   const ctx = canvas.getContext('2d');
   const wrap = canvas.parentElement;
 
