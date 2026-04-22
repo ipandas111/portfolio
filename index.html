@@ -1454,24 +1454,26 @@ document.querySelectorAll('.reveal, .timeline-item').forEach(el => observer.obse
   const wrap = canvas.parentElement;
 
   function resize() {
-    canvas.width = wrap.clientWidth;
-    canvas.height = wrap.clientHeight;
+    const w = wrap.clientWidth || wrap.offsetWidth;
+    const h = wrap.clientHeight || wrap.offsetHeight;
+    canvas.width  = w || 600;
+    canvas.height = h || 900;
   }
   resize();
   window.addEventListener('resize', resize);
 
   // Colors from CSS vars
   const COLORS = {
-    node: '#c4785a',
-    nodeGlow: 'rgba(196,120,90,',
-    line: 'rgba(196,120,90,',
-    lineSoft: 'rgba(196,120,90,',
+    node: '#e8505a',
+    nodeGlow: 'rgba(220,80,90,',
+    line: 'rgba(200,90,80,',
+    lineSoft: 'rgba(220,80,90,',
     bg: '#faf8f5',
   };
 
-  const NODE_COUNT = 36;
-  const CONNECTION_DIST = 160;
-  const REPULSION_DIST = 70;
+  const NODE_COUNT = 90;
+  const CONNECTION_DIST = 220;
+  const REPULSION_DIST = 55;
 
   class Node {
     constructor(w, h) {
