@@ -965,7 +965,7 @@ footer span {
   </div>
 
   <div class="hero-canvas-wrap">
-    <canvas id="heroCanvas"></canvas>
+    <canvas id="heroCanvas" width="600" height="900"></canvas>
   </div>
 
   <div class="hero-scroll-hint">
@@ -1454,12 +1454,12 @@ document.querySelectorAll('.reveal, .timeline-item').forEach(el => observer.obse
   const wrap = canvas.parentElement;
 
   function resize() {
+    // Canvas HTML attrs are set as fallback; try to get real size
     const w = wrap.clientWidth || wrap.offsetWidth;
     const h = wrap.clientHeight || wrap.offsetHeight;
-    canvas.width  = w || 600;
-    canvas.height = h || 900;
+    canvas.width  = w > 0 ? w : 600;
+    canvas.height = h > 0 ? h : 900;
   }
-  resize();
   window.addEventListener('resize', resize);
 
   // Colors from CSS vars
